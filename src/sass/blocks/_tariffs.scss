@@ -1,0 +1,122 @@
+.tariffs {
+    padding: 50px 0;
+    overflow: hidden;
+    // .tariffs__title
+    &__title {
+        margin-bottom: 70px;
+    }
+    // .tariffs__container
+    &__container {
+        position: relative;
+        max-width: 100%;
+        padding: 0;
+    }
+    // .tariffs__frame
+    &__frame {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+
+
+.slider {
+    max-width: 1200px;
+    margin: 0 auto 70px auto;
+    display: flex;
+    transition: all 0.3s;
+    // .slider__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex:0 0 100%;
+        @media (max-width: 1220px) {
+            display: block;
+        }
+    }
+    // .slider__img
+    &__img {
+        flex:0 0 560px;
+        margin-right: 40px;
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 20px;
+        }
+        @media (max-width: 1220px) {
+            max-width: 560px;
+            margin: 0 auto 30px auto;
+        }
+        @media (max-width: 768px) {
+            max-width: 80%;
+        }
+    }
+    // .slider__content
+    &__content {
+        flex:0 0 560px;
+        @media (max-width: 1220px) {
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            max-width: 80%;
+        }
+    }
+    // .slider__subtitle
+    &__subtitle {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    // .slider__text
+    &__text {
+        font-size: 19;
+        line-height: 31px;
+    }
+}
+.btn-prev {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: 30px;
+    transform: translateY(-100%);
+    padding: 10px;
+    background-color: #863fc4;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        img {
+            width: 7px;
+        }
+    }
+}
+.btn-next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    right: 30px;
+    transform: translateY(-100%);
+    padding: 10px;
+    background-color: #863fc4;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        img {
+            width: 7px;
+        }
+    }
+}
+

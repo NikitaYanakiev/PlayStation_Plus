@@ -1,0 +1,117 @@
+.contact {
+    padding: 100px 0;
+    overflow: hidden;
+    @media (max-width:1024px) {
+        padding: 70px 0;
+    }
+    @media (max-width:768px) {
+        padding: 40px 0;
+    }
+    // .contact__container
+    &__container {
+        position: relative;
+    }
+    // .contact__title
+    &__title {
+        margin-bottom: 50px;
+        @media (max-width:1024px) {
+            margin-bottom: 35px;
+        }
+    }
+    // .contact__text
+    &__text {
+        max-width: 635px;
+        font-size: 23px;
+        font-weight: lighter;
+        line-height: 150%;
+        margin-bottom: 120px;
+        @media (max-width:1024px) {
+            font-size: 18px;
+            max-width: 450px;
+            margin-bottom: 70px;
+        }
+        @media (max-width:768px) {
+            font-size: 16px;
+            max-width: 320px;
+            margin-bottom: 30px;
+        }
+    }
+    // .contact__number
+    &__number {
+        font-size: 66px;
+        font-weight: bold;
+        line-height: 125%;
+        @media (max-width:1024px) {
+            font-size: 48px;
+        }
+        @media (max-width:768px) {
+            font-size: 34px;
+        }
+    }
+    // .contact__elements
+    &__elements {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        z-index: -1;
+
+        @media (max-width:1024px) {
+            width: 330px;
+            height: 330px;
+            right: 50px;
+        }
+        @media (max-width:768px) {
+            right: 20px;
+        }
+    }
+    // .contact__img
+    &__img {
+        position: absolute;
+        img {
+            width: 100%;
+            display: block;
+        }
+        // .contact__img_01
+        &_01 {
+            filter: blur(1px);
+            width: 160px;
+            top: 20px;
+            left: 20px;
+            @media (max-width:1024px) {
+                width: 120px;
+            }
+        }
+        // .contact__img_02
+        &_02 {
+            filter: blur(5px);
+            width: 220px;
+            bottom: 400px;
+            right: 0px;
+            @media (max-width:1024px) {
+                width: 180px;
+            }
+        }
+        // .contact__img_03
+        &_03 {
+            filter: blur(5px);
+            width: 220px;
+            bottom: -150px;
+            left: 20px;
+            @media (max-width:1024px) {
+                width: 160px;
+            }
+        }
+        // .contact__img_04
+        &_04 {
+            filter: blur(2px);
+            width: 200px;
+            bottom: 0px;
+            right: 20px;
+            @media (max-width:1024px) {
+                width: 160px;
+            }
+        }
+    }
+}

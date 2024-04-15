@@ -1,0 +1,74 @@
+.games {
+    padding: 100px 0;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+        padding: 70px 0;
+    }
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+    // .games__container
+    &__container {
+        max-width: 2500px;
+        margin: 0 auto;
+    }
+    // .games__row-top
+    &__row-top {
+        display: flex;
+        @include adaptiv-value("margin-bottom", 36, 10, 1);
+        transition: all .8s ease;
+    }
+    // .games__item-top
+    &__item-top {
+        position: relative;
+        cursor: pointer;
+        flex-grow: 0;
+        flex-shrink: 0;
+        @include adaptiv-value("flex-basis", 250, 125, 1);
+        @include adaptiv-value("height", 250, 125, 1);
+        @include adaptiv-value("border-radius", 20, 16, 1);
+        @include adaptiv-value("margin-left", 26, 10, 1);
+        overflow: hidden;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            display: block;
+            @include adaptiv-value("width", 250, 125, 1);
+            @include adaptiv-value("height", 250, 125, 1);
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+    // .games__row-bottom
+    &__row-bottom {
+        display: flex;
+        transition: all .8s ease;
+    }
+    // .games__item-bottom
+    &__item-bottom {
+        position: relative;
+        cursor: pointer;
+        flex-grow: 0;
+        flex-shrink: 0;
+        @include adaptiv-value("flex-basis", 250, 125, 1);
+        @include adaptiv-value("height", 460, 230, 1);
+        @include adaptiv-value("border-radius", 20, 16, 1);
+        @include adaptiv-value("margin-left", 26, 10, 1);
+        overflow: hidden;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            display: block;
+            @include adaptiv-value("width", 250, 125, 1);
+            @include adaptiv-value("height", 460, 230, 1);
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

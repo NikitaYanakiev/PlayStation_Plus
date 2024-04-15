@@ -1,0 +1,37 @@
+@import 'base/null';
+@import 'base/mixins';
+@import 'base/animation';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to right, #efb828, #9b6002);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    &_big {
+        max-width: 1800px;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/runing-text';
+@import 'blocks/subscribe';
+@import 'blocks/about';
+@import 'blocks/tariffs';
+@import 'blocks/games';
+@import 'blocks/instruction';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/preloader';
