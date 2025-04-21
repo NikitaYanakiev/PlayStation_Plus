@@ -1,10 +1,10 @@
-.banner {
+.main-visual {
     height: 100vh;
     overflow: hidden;
     @media (max-width: 1024px) {
         overflow: hidden;
     }
-    // .banner__container
+    // .main-visual__container
     &__container {
         position: relative;
         display: flex;
@@ -13,7 +13,7 @@
             height: 100%;
         }
     }
-    // .banner__content
+    // .main-visual__content
     &__content {
         flex: 0 0 auto;
         order: 1;
@@ -24,7 +24,7 @@
             padding: 0 0 0 0;
         }
     }
-    // .banner__title
+    // .main-visual__title
     &__title {
         position: relative;
         z-index: 10;
@@ -36,7 +36,7 @@
             margin: 0 auto 20px auto;
         }
     }
-    // .banner__btn
+    // .main-visual__btn
     &__btn {
         position: relative;
         z-index: 10;
@@ -66,7 +66,7 @@
     }
 }
 
-.elements-banner {
+.elements-main-visual {
     position: relative;
     flex: 1 1 auto;
     height: 600px;
@@ -74,7 +74,7 @@
     @media (max-width: 1024px) {
         height: 55%;
     }
-    // .elements-banner__gamepad-left
+    // .elements-main-visual__gamepad-left
     &__gamepad-left {
         @include adaptiv-value("width", 900, 500, 1);
         position: absolute;
@@ -97,7 +97,7 @@
             width: 130%;
         }
     }
-    // .elements-banner__item01
+    // .elements-main-visual__item01
     &__item01 {
         top: 50%;
         left: 10%;
@@ -110,7 +110,7 @@
             top: 30%;
         }
     }
-    // .elements-banner__item02
+    // .elements-main-visual__item02
     &__item02 {
         top: -20%;
         left: 10%;
@@ -122,7 +122,7 @@
             max-width: 20%;
         }
     }
-    // .elements-banner__drop01
+    // .elements-main-visual__drop01
     &__drop01 {
         top: 20%;
         left: 5%;
@@ -137,7 +137,7 @@
             top: 10%;
         }
     }
-    // .elements-banner__drop02
+    // .elements-main-visual__drop02
     &__drop02 {
         left: 35%;
         top: 70%;
@@ -151,7 +151,7 @@
             top: 60%;
         }
     }
-    // .elements-banner__gamepad-right
+    // .elements-main-visual__gamepad-right
     &__gamepad-right {
         @include adaptiv-value("width", 1200, 600, 1);
         position: absolute;
@@ -173,7 +173,7 @@
             width: 150%;
         }
     }
-    // .elements-banner__item03
+    // .elements-main-visual__item03
     &__item03 {
         bottom: 15%;
         right: 25%;
@@ -186,7 +186,7 @@
             max-width: 20%;
         }
     }
-    // .elements-banner__item04
+    // .elements-main-visual__item04
     &__item04 {
         right: 8%;
         bottom: 35%;
@@ -197,7 +197,7 @@
             max-width: 20%;
         }
     }
-    // .elements-banner__drop03
+    // .elements-main-visual__drop03
     &__drop03 {
         top: 15%;
         right: 33%;

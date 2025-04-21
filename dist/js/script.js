@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     top: target.offsetTop,
                     behavior: "smooth"
                 });
-                if (target.id !== 'banner') {
+                if (target.id !== 'main-visual') {
                     if(isTouchDevice()) {
                         console.log('Check');
                         document.querySelector('#checkbox').checked = false;
